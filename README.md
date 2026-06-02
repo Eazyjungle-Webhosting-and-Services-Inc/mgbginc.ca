@@ -2,6 +2,12 @@
 
 Modern dynamic website and admin dashboard for **MGBG Inc. / Meta Genie Business Group**.
 
+## Repository
+
+- **GitHub:** https://github.com/Eazyjungle-Webhosting-and-Services-Inc/mgbginc.ca
+- **Clone (SSH, for Plesk):** `git@github.com:Eazyjungle-Webhosting-and-Services-Inc/mgbginc.ca.git`
+- **Fresh Plesk deploy after account/repo move:** [PLESK-FRESH-START.md](./PLESK-FRESH-START.md)
+
 ## Stack
 
 - Next.js App Router

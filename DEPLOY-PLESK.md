@@ -2,6 +2,9 @@
 
 This project is ready to run as a Plesk Node.js application with MySQL/phpMyAdmin.
 
+**Repository:** `git@github.com:Eazyjungle-Webhosting-and-Services-Inc/mgbginc.ca.git`  
+If Git or an old GitHub account left the server in a bad state, start with [PLESK-FRESH-START.md](./PLESK-FRESH-START.md).
+
 ## 1. Plesk Requirements
 
 - Node.js 20.9+ or Node.js 22
