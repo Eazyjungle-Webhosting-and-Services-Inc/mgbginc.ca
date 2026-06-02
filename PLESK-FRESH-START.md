@@ -109,7 +109,17 @@ Restart the Node.js app.
 
 ---
 
-## Part 4 — Verify
+## Part 4 — Load default website content
+
+After the database is created, seed loads all pages, services, projects, and blog posts from `src/content/site-content.ts`:
+
+```bash
+npm run db:seed
+```
+
+If you already ran `npm run db:deploy`, seed ran once. Re-run `npm run db:seed` anytime you update content files in Git and pull on the server.
+
+## Part 5 — Verify
 
 - `https://mgbginc.ca`
 - `https://mgbginc.ca/api/health`

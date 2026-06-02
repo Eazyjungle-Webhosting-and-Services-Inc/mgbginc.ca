@@ -1,18 +1,8 @@
 import Link from "next/link";
 import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Youtube } from "lucide-react";
+import { footerNavigation } from "@/content/site-structure";
 import { getSiteSettings } from "@/lib/content";
 import { LogoImage } from "@/components/site/LogoImage";
-
-const footerLinks = [
-  { href: "/about", label: "About" },
-  { href: "/services", label: "Services" },
-  { href: "/projects", label: "Projects" },
-  { href: "/partnerships", label: "R&D / Partnerships" },
-  { href: "/blog", label: "Blog / News" },
-  { href: "/useful-links", label: "Useful Links" },
-  { href: "/privacy-policy", label: "Privacy Policy" },
-  { href: "/terms-conditions", label: "Terms & Conditions" }
-];
 
 const defaultLogo = "/mgbg-logo-mark.png?v=2";
 
@@ -57,7 +47,7 @@ export async function Footer() {
           <div>
             <h2 className="text-sm font-semibold uppercase tracking-[0.2em] text-gold">Navigate</h2>
             <div className="mt-5 grid grid-cols-2 gap-3 text-sm text-white/70">
-              {footerLinks.map((link) => (
+              {footerNavigation.map((link) => (
                 <Link key={link.href} href={link.href} className="transition hover:text-white">
                   {link.label}
                 </Link>

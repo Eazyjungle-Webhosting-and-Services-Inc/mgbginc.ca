@@ -51,7 +51,7 @@ export default async function AboutPage() {
           <SectionHeading
             eyebrow="Scope"
             title="A broad operating lens, managed through simple priorities."
-            description={`${services.length} service areas can be managed dynamically from the admin dashboard.`}
+            description={`MGBG supports ${services.length} service areas spanning strategy, delivery, people, research, and partnerships.`}
             align="center"
           />
         </div>

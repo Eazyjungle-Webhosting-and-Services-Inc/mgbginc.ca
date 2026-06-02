@@ -85,6 +85,10 @@ Change `JWT_SECRET`, `ADMIN_PASSWORD`, and SMTP values before production deploym
 - Media library uploads and reusable media selection
 - Rich text editing for pages, posts, service descriptions, expert bios, and project/partnership content
 
+## Website content
+
+Default page copy, services, projects, blog posts, and navigation are defined in [`src/content/`](./src/content/). After editing those files, run `npm run db:seed` to refresh the database (or `npm run db:deploy` on a new server).
+
 ## Deployment Notes
 
 The app is configured for MySQL via Prisma. You can create and inspect the database in phpMyAdmin, while Prisma manages the table structure through `npx prisma db push`.

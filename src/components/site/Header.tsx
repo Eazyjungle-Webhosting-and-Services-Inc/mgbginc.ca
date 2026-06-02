@@ -1,17 +1,8 @@
 import Link from "next/link";
+import { primaryNavigation } from "@/content/site-structure";
 import { getSiteSettings } from "@/lib/content";
 import { LogoImage } from "@/components/site/LogoImage";
 import { MobileNav } from "@/components/site/MobileNav";
-
-const links = [
-  { href: "/about", label: "About" },
-  { href: "/services", label: "Services" },
-  { href: "/projects", label: "Projects" },
-  { href: "/partnerships", label: "R&D" },
-  { href: "/experts", label: "Experts" },
-  { href: "/blog", label: "News" },
-  { href: "/contact", label: "Contact" }
-];
 
 const defaultLogo = "/mgbg-logo-mark.png?v=2";
 
@@ -40,7 +31,7 @@ export async function Header() {
             </span>
           </Link>
           <nav className="hidden items-center gap-1 lg:flex">
-            {links.map((link) => (
+            {primaryNavigation.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
@@ -58,7 +49,9 @@ export async function Header() {
               Book Consultation
             </Link>
           </div>
-          <MobileNav links={[...links, { href: "/book-free-consultation", label: "Book Consultation" }]} />
+          <MobileNav
+            links={[...primaryNavigation, { href: "/book-free-consultation", label: "Book Consultation" }]}
+          />
         </div>
       </div>
     </header>

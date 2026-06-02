@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, Globe2, LineChart, ShieldCheck, type LucideIcon } from "lucide-react";
+import { homeProofPoints } from "@/content/site-structure";
+import { siteContent } from "@/content/site-content";
 import { ButtonLink } from "@/components/site/ButtonLink";
 import {
   ExpertCard,
@@ -34,18 +36,15 @@ export default async function HomePage() {
     getPosts(2)
   ]);
 
-  const heroTitle = home?.heroTitle || "Building Strategic Partnerships for Sustainable Business Growth";
-  const heroSubtitle =
-    home?.heroSubtitle ||
-    "MGBG Inc. helps organizations simplify strategy, manage projects, build leadership, and unlock profitable growth.";
-  const heroImage =
-    home?.heroImage ||
-    "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1800&q=85";
-  const proofPoints: { title: string; copy: string; icon: LucideIcon }[] = [
-    { title: "Strategy", copy: "Simplified planning pathways for growth and execution.", icon: ShieldCheck },
-    { title: "Projects", copy: "Project rhythm, accountability, and stakeholder alignment.", icon: LineChart },
-    { title: "Partnerships", copy: "Business, research, and institutional collaboration support.", icon: Globe2 }
-  ];
+  const defaults = siteContent.homeContent;
+  const heroTitle = home?.heroTitle || defaults.heroTitle;
+  const heroSubtitle = home?.heroSubtitle || defaults.heroSubtitle;
+  const heroImage = home?.heroImage || defaults.heroImage;
+  const proofPointIcons: LucideIcon[] = [ShieldCheck, LineChart, Globe2];
+  const proofPoints = homeProofPoints.map((point, index) => ({
+    ...point,
+    icon: proofPointIcons[index] ?? CheckCircle2
+  }));
 
   return (
     <>
