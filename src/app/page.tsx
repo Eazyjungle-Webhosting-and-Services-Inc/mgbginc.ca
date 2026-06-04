@@ -50,7 +50,7 @@ export default async function HomePage() {
     <>
       <section className="relative isolate overflow-hidden bg-ink pt-32 text-white">
         <img src={heroImage} alt="" className="absolute inset-0 -z-20 h-full w-full object-cover object-center" />
-        <div className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(7,20,35,0.96),rgba(7,20,35,0.78),rgba(7,20,35,0.42))]" />
+        <div className="absolute inset-0 -z-10 bg-[linear-gradient(105deg,rgba(7,20,35,0.94),rgba(11,31,51,0.82)_45%,rgba(17,103,94,0.28)_100%)]" />
         <div className="container-shell grid min-h-[820px] content-center pb-16 pt-24">
           <div className="max-w-4xl animate-fade-up">
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-gold">

@@ -1,5 +1,7 @@
 /** Shared imagery for seed data, fallbacks, and static sections. */
 export const siteImages = {
+  /** Homepage hero — abstract creative (no people). File: public/hero-home.jpg */
+  homeHero: "/hero-home.jpg",
   hero: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1800&q=85",
   leadership: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1600&q=85",
   planning: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1600&q=85",

@@ -24,7 +24,7 @@ export const siteContent = {
     heroTitle: "Building Strategic Partnerships for Sustainable Business Growth",
     heroSubtitle:
       "MGBG Inc. helps organizations simplify strategy, manage projects, build leadership, and unlock profitable growth.",
-    heroImage: siteImages.hero,
+    heroImage: siteImages.homeHero,
     heroPrimaryText: "Book Free Consultation",
     heroPrimaryLink: "/book-free-consultation",
     heroSecondaryText: "Explore Services",
@@ -114,7 +114,7 @@ export const siteContent = {
       eyebrow: "People Behind the Work",
       summary:
         "A practical team of consultants, planners, facilitators, and development experts.",
-      heroImage: siteImages.hero,
+      heroImage: siteImages.leadership,
       seoTitle: "MGBG Experts & Team",
       seoDescription:
         "Meet the MGBG consultants and advisors supporting strategy, projects, leadership, and partnerships.",
